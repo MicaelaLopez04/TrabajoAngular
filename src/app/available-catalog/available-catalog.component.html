@@ -1,0 +1,10 @@
+<p>Catalogo disponible</p>
+<div class="catalogo">
+  <div class="prenda" *ngFor="let prenda of prendas">
+    <img [src]="prenda.imagenUrl" [alt]="prenda.nombre" />
+    <h3>{{ prenda.nombre }}</h3>
+    <p>Precio: ${{ prenda.precio }}</p>
+    <p>Talles: {{ prenda.talles.join(', ') }}</p>
+     <button class="btn btn-sm btn-success" (click)="agregarAlCarrito(prenda)">Agregar al carrito</button>
+  </div> 
+</div>
