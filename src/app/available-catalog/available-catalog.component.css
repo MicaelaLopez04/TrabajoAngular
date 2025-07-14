@@ -20,3 +20,7 @@
   height: auto;
   border-radius: 8px;
 }
+
+.clearance{
+  border: 2px solid green;
+}

@@ -3,4 +3,6 @@ export interface Prenda {
   imagenUrl: string;
   precio: number;
   talles: string[];
+  stock: number;
+  clearance: boolean;
 }

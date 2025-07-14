@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CartService } from '../cart.service'; 
+import { Prenda } from '../prenda.model'; 
 
 
 @Component({
@@ -8,27 +9,33 @@ import { CartService } from '../cart.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './available-catalog.component.html',
-  styleUrl: './available-catalog.component.css'
+  styleUrls: ['./available-catalog.component.css'] 
 })
 export class AvailableCatalogComponent implements OnInit {
-  prendas = [
+  prendas: Prenda[]= [
     {
       nombre: 'Remera oversize',
-      imagenUrl: 'assets/remera1.jpg',
+      imagenUrl: 'assets/remera.jpg',
       precio: 5999,
-      talles: ['S', 'M', 'L']
+      talles: ['S', 'M', 'L'],
+      stock:2,
+      clearance:true,
     },
     {
       nombre: 'Campera de jean',
-      imagenUrl: 'assets/campera1.jpg',
+      imagenUrl: 'assets/CamperaJean.jpg',
       precio: 12999,
-      talles: ['M', 'L']
+      talles: ['M', 'L'],
+      stock:7,
+      clearance: false,
     },
     {
-      nombre: 'Pantalón cargo',
-      imagenUrl: 'assets/pantalon1.jpg',
+      nombre: 'Jeans',
+      imagenUrl: 'assets/Jeans.jpg',
       precio: 10999,
-      talles: ['S', 'M']
+      talles: ['S', 'M'],
+      stock:3,
+      clearance: false,
     }
   ];
 
@@ -42,7 +49,11 @@ export class AvailableCatalogComponent implements OnInit {
     });
   }
 
-  agregarAlCarrito(prenda: any) {
+  agregarAlCarrito(prenda: Prenda) {
+  if (prenda.stock > 0) {
     this.cartService.agregarAlCarrito(prenda);
+    prenda.stock--;
   }
+}
+
 }
