@@ -1,59 +1,48 @@
-# Salome
+# Trabajo Final - Proyecto Salome (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+## Descripción del Proyecto
 
-## Development server
+El proyecto **Salome** es una aplicación web desarrollada con Angular que simula un sistema de catálogo y carrito de compras para prendas de vestir. La aplicación permite a los usuarios explorar un listado de productos, filtrar según diferentes criterios, agregar prendas al carrito y visualizar el contenido del mismo en un panel dinámico.
 
-To start a local development server, run:
+El desarrollo del proyecto tuvo como objetivo principal aplicar los conceptos y herramientas aprendidos en el curso de Angular, incluyendo la creación y comunicación entre componentes, uso de servicios para manejar el estado global (carrito de compras), manejo de eventos, y consumo de datos simulados.
 
-```bash
-ng serve
-```
+El diseño se enfocó en ofrecer una experiencia intuitiva y responsiva, empleando Bootstrap para la estilización y asegurando accesibilidad en la interfaz.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Funcionalidades principales
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Listado dinámico de prendas:** Visualización de prendas con imagen, nombre, descripción y precio.  
+- **Barra de navegación:** La aplicación cuenta con una barra de navegación fija en la parte superior que permite al usuario desplazarse fácilmente entre las distintas secciones principales del proyecto.    
+- **Carrito de compras:** Los usuarios pueden agregar productos, visualizar la cantidad y eliminar items del carrito.  
+- **Comunicación entre componentes:** Uso de servicios para compartir datos y estados entre el catálogo y el carrito.  
+- **Diseño responsivo:** La aplicación se adapta a diferentes tamaños de pantalla para una mejor experiencia en dispositivos móviles y desktop.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Tecnologías utilizadas
 
-```bash
-ng generate --help
-```
+- **Angular 15+**: Framework principal para desarrollo SPA.  
+- **TypeScript**: Lenguaje base para el desarrollo de la aplicación.  
+- **Bootstrap 5**: Para el diseño responsivo y componentes visuales.  
+- **HTML5 y CSS3**: Estructura y estilos básicos.  
+- **Git y GitHub**: Control de versiones y alojamiento del código fuente.
 
-## Building
+---
 
-To build the project run:
+## Datos del Estudiante
 
-```bash
-ng build
-```
+- **Nombre y Apellido:** Micaela Nicole Lopez  
+- **DNI:** 46.105.507  
+- **Email:** mikalpz04@gmail.com
+- **Sede:** Tres Arroyos
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## Link asociado a StackBlitz
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+El proyecto está alojado y puede ser editado directamente en línea a través de StackBlitz.  
+Pueden acceder y probar el proyecto en el siguiente enlace:
 
-```bash
-ng test
-```
+[TrabajoAngular en StackBlitz] https://stackblitz.com/github/MicaelaLopez04/TrabajoAngular
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
