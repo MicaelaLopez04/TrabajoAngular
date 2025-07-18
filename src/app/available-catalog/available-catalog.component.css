@@ -13,14 +13,30 @@
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px; 
+  justify-content: space-between;
 }
 
 .prenda img {
   width: 100%;
-  height: auto;
+  height: 190px; 
+  object-fit: cover; 
   border-radius: 8px;
 }
 
-.clearance{
+.prenda h3 {
+  font-size: 1rem;
+  height: 100px; 
+  margin: 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.clearance {
   border: 2px solid green;
 }

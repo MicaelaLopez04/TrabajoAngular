@@ -5,4 +5,5 @@ export interface Prenda {
   talles: string[];
   stock: number;
   clearance: boolean;
+  quantity?: number; 
 }

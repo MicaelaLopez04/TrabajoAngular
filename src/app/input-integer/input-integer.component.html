@@ -1,0 +1,19 @@
+<div class="input-integer">
+  <div class="d-flex align-items-center gap-2 mb-2">
+    <button class="btn btn-outline-secondary btn-sm" (click)="decrementar()">–</button>
+
+    <input type="number"
+           class="form-control form-control-sm text-center"
+           [value]="cantidad"
+           (input)="actualizarCantidadDesdeInput($event)" />
+
+    <button class="btn btn-outline-secondary btn-sm" (click)="incrementar()">+</button>
+  </div>
+
+  <button class="btn btn-sm btn-success"
+          (click)="agregarAlCarrito()"
+          [disabled]="prenda.stock === 0">
+    Agregar al carrito
+  </button>
+</div>
+
